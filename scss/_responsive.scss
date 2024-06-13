@@ -1,0 +1,98 @@
+@include media-md {
+    .menu-btn{
+        visibility: hidden;
+    }
+
+    .nav{
+        visibility: visible;
+
+        .menu-nav{
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &__item{
+                display: inline;
+                padding-right:1.5rem ;
+
+            }
+
+            &__link{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@include media-lg{
+    .home{
+    height: 100%;
+    padding-top: 40vh;
+    // display: flex;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background:
+     linear-gradient(
+        to right,
+        rgba($primary-color,0.9),
+        rgba($primary-color,0.3)
+     ),
+     url('../img/p3.jpg') center top / contain no-repeat;
+
+    
+
+    }
+    .projects{
+        &__btn{
+            font-size: xx-large;
+        }
+    }
+
+    .contact{
+        height: 100%;
+    padding-top: 40vh;
+    // display: flex;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background:
+     linear-gradient(
+        to right,
+        rgba($primary-color,0.9),
+        rgba($primary-color,0.3)
+     ),
+     url('../img/p3.jpg') center top / contain no-repeat;
+
+    
+    }
+
+    .jobs{
+        width:60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:2rem;
+
+        &__job{
+            background:lighten($primary-color,10%);
+            padding: 0.5rem;
+            border-bottom: 5px solid $secondary-color;
+
+            h2,h3{
+                margin: 0.5rem 0;
+                font-size: x-large;
+            }
+            h6{
+                margin: 0.3rem 0;
+                font-size: larger;
+            }
+        }
+    }
+
+
+
+
+}
